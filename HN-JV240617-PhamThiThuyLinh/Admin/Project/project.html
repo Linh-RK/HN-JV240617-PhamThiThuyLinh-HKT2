@@ -16,8 +16,6 @@
   <body>
     <div class="container">
       <div class="wrap">
-        <input type="file" />
-
         <!-- ==================HEADER==================== -->
         <div class="header">
           <div class="user">
@@ -47,7 +45,7 @@
                 </button>
                 <!-- =========FORM========== -->
                 <div class="add-project-form" style="display: none">
-                  <form class="add-form">
+                  <form>
                     <h3 class="title">Thêm mới dự án</h3>
                     <div>
                       <div>
@@ -56,7 +54,6 @@
                           type="text"
                           name="input-project"
                           id="input-project"
-                          class="input-project"
                         />
                       </div>
                       <div>
@@ -65,7 +62,6 @@
                           type="text"
                           name="img-project-add"
                           id="img-project-add"
-                          class="img-project-add"
                         />
                       </div>
                       <div>
@@ -75,7 +71,6 @@
                           type="text"
                           name="project-tech"
                           id="project-tech"
-                          class="project-tech"
                         />
                       </div>
                       <div>
@@ -84,7 +79,6 @@
                           type="text"
                           name="project-github"
                           id="project-github"
-                          class="project-github"
                         />
                       </div>
                       <div>
@@ -92,7 +86,6 @@
                         <textarea
                           name="description"
                           id="description"
-                          class="description"
                         ></textarea>
                       </div>
                     </div>
@@ -106,73 +99,16 @@
                       >
                         Thêm
                       </button>
-                    </div>
-                  </form>
-                  <!-- ============= -->
-                  <form class="update-form" style="display: none">
-                    <h3 class="title">Sửa dự án</h3>
-                    <div>
-                      <div>
-                        <label for="input-project">Tên dự án</label><br />
-                        <input
-                          type="text"
-                          name="input-project"
-                          id="input-project"
-                          class="input-project"
-                        />
-                      </div>
-                      <div>
-                        <label for="img-project-add">Hình ảnh</label><br />
-                        <input
-                          type="text"
-                          name="img-project-add"
-                          id="img-project-add"
-                          class="img-project-add"
-                        />
-                      </div>
-                      <div>
-                        <label for="project-tech">Công nghệ sử dụng</label
-                        ><br />
-                        <input
-                          type="text"
-                          name="project-tech"
-                          id="project-tech"
-                          class="project-tech"
-                        />
-                      </div>
-                      <div>
-                        <label for="project-github">Link github</label><br />
-                        <input
-                          type="text"
-                          name="project-github"
-                          id="project-github"
-                          class="project-github"
-                        />
-                      </div>
-                      <div>
-                        <label for="description">Mô tả</label><br />
-                        <textarea
-                          name="description"
-                          id="description"
-                          class="description"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="btn-form">
-                      <button class="btn-form-cancel" onclick="cancelForm()">
-                        Huỷ
-                      </button>
-
                       <button
                         class="btn-form-update-project"
                         onclick="updateProject()"
+                        style="display: none"
                       >
-                        Sửa
+                        Cập nhật
                       </button>
                     </div>
                   </form>
                 </div>
-                <!-- ============================== -->
               </div>
               <!-- ===================== -->
               <div class="bottom">
@@ -210,4 +146,3 @@
     <script src="./project.js"></script>
   </body>
 </html>
-<img src="./img/tiki.png" alt="" />
