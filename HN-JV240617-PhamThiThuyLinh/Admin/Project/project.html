@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./project.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <input type="file" />
+
+        <!-- ==================HEADER==================== -->
+        <div class="header">
+          <div class="user">
+            <span>Phạm Thị Thuỳ Linh</span>
+            <img src="./img/ava.jpg" alt="" />
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <!-- ==================CONTENT================== -->
+        <div class="content">
+          <!-- ==================Side bar================== -->
+          <div class="side-bar">
+            <ul>
+              <li class="skill-bar"><a href="">Kỹ năng</a></li>
+              <li class="project-bar"><a href="">Dự án</a></li>
+            </ul>
+          </div>
+          <!-- ==================Main content================== -->
+
+          <div class="main-content">
+            <!-- ==================DISPLAY 2================== -->
+            <div class="display">
+              <div class="top">
+                <h3>Dự án</h3>
+                <button class="btn-add-project" onclick="displayForm()">
+                  Thêm mới dự án
+                </button>
+                <!-- =========FORM========== -->
+                <div class="add-project-form" style="display: none">
+                  <form>
+                    >
+                    <h3 class="title">Thêm mới dự án</h3>
+                    <div>
+                      <div>
+                        <label for="input-project">Tên dự án</label><br />
+                        <input
+                          type="text"
+                          name="input-project"
+                          id="input-project"
+                        />
+                      </div>
+                      <div>
+                        <label for="img-project-add">Hình ảnh</label><br />
+                        <input
+                          type="text"
+                          name="img-project-add"
+                          id="img-project-add"
+                        />
+                      </div>
+                      <div>
+                        <label for="project-tech">Công nghệ sử dụng</label
+                        ><br />
+                        <input
+                          type="text"
+                          name="project-tech"
+                          id="project-tech"
+                        />
+                      </div>
+                      <div>
+                        <label for="project-github">Link github</label><br />
+                        <input
+                          type="text"
+                          name="project-github"
+                          id="project-github"
+                        />
+                      </div>
+                      <div>
+                        <label for="description">Mô tả</label><br />
+                        <textarea
+                          name="description"
+                          id="description"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="btn-form">
+                      <button class="btn-form-cancel" onclick="cancelForm()">
+                        Huỷ
+                      </button>
+                      <button
+                        class="btn-form-add-project"
+                        onclick="addNewProject()"
+                      >
+                        Thêm
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- ===================== -->
+              <div class="bottom">
+                <table>
+                  <thead>
+                    <th>STT</th>
+                    <th>Tên dự án</th>
+                    <th>Hình ảnh</th>
+                    <th>Công nghê</th>
+                    <th>Chức năng</th>
+                  </thead>
+                  <tbody id="project-line">
+                    <tr>
+                      <td></td>
+                      <td>ReactJS</td>
+                      <td class="img" id="img-project-add">
+                        <img src="" alt="" />
+                      </td>
+                      <td></td>
+                      <td class="btn">
+                        <button class="updateBtn" onclick="updateProjectLine()">
+                          Sửa
+                        </button>
+                        <button onclick="deleteProjectLine()">Xoá</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./project.js"></script>
+  </body>
+</html>
+<img src="./img/tiki.png" alt="" />

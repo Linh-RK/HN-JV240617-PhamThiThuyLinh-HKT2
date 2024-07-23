@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* max-width: 1200px; */
+}
+.header .user {
+  background-color: #dadada;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+.header .fa-user {
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #838383;
+  font-size: 20px;
+}
+/* ==================CONTENT================== */
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+/* ==================Side bar================== */
+.content {
+  display: flex;
+  width: 100%;
+}
+.content .side-bar {
+  background-color: #031434;
+  min-width: 20%;
+  /* padding: 0 30px; */
+  height: 100vh;
+}
+.content .side-bar ul {
+  list-style: none;
+}
+.content .side-bar li {
+  padding: 20px 30px;
+}
+.content .side-bar .skill-bar {
+  background-color: #1e3255;
+}
+.content .side-bar ul a {
+  text-decoration: none;
+  color: #fbfffc;
+  font-size: 20px;
+}
+
+/*  ==================Main content================== */
+/* ==================DISPLAY 1================== */
+.content .main-content {
+  padding: 0 20px;
+  width: 80%;
+  /* position: relative; */
+}
+.content .main-content .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.content .main-content .top .btn-add-skill {
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #2463eb;
+  color: #e4e4fa;
+  border: none;
+  font-size: 14px;
+}
+.content .main-content .top .add-skill-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15% 25% 18% 45%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.content .main-content .top .add-skill-form form {
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.content .main-content .top .add-skill-form form h3 {
+  margin-bottom: 20px;
+}
+.content .main-content .top .add-skill-form form input {
+  padding: 5px;
+  width: 100%;
+  margin: 3px 0 20px 0;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+.content .main-content .top .add-skill-form form .btn-form {
+  text-align: right;
+}
+.content .main-content .top .add-skill-form form button {
+  padding: 8px 15px;
+  font-size: 14px;
+  margin-left: 5px;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+.content .main-content .top .add-skill-form form .btn-form-cancel {
+  background-color: transparent;
+}
+.content .main-content .top .add-skill-form form .btn-form-add-skill {
+  background-color: #2463eb;
+  color: white;
+}
+/* ===================================== */
+.content .main-content .bottom table {
+  width: 100%;
+}
+.content .main-content .bottom table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid #a6a6a6;
+  padding: 10px 20px;
+}
+.content .main-content .bottom table .btn {
+  text-align: center;
+}
+.content .main-content .bottom table .btn button {
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid #ff8687;
+  color: #ff8687;
+  border-radius: 5px;
+}
+.content .main-content .bottom img {
+  width: 50px;
+  height: 50px;
+}
+.content .main-content .bottom .img {
+  text-align: center;
+}

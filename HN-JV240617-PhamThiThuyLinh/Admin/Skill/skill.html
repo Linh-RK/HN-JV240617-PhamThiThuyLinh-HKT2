@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./skill.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <input type="file" />
+
+        <!-- ==================HEADER==================== -->
+        <div class="header">
+          <div class="user">
+            <span>Phạm Thị Thuỳ Linh</span>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+        <!-- ==================CONTENT================== -->
+        <div class="content">
+          <!-- ==================Side bar================== -->
+          <div class="side-bar">
+            <ul>
+              <li class="skill-bar"><a href="">Kỹ năng</a></li>
+              <li><a href="">Dự án</a></li>
+            </ul>
+          </div>
+          <!-- ==================Main content================== -->
+
+          <div class="main-content">
+            <!-- ==================DISPLAY 1================== -->
+            <div class="display">
+              <div class="top">
+                <h3>Kỹ năng</h3>
+                <button class="btn-add-skill" onclick="displayForm()">
+                  Thêm mới kỹ năng
+                </button>
+                <!-- =========FORM========== -->
+                <div class="add-skill-form" style="display: none">
+                  <form>
+                    <h3 class="title">Thêm mới kỹ năng</h3>
+                    <div>
+                      <div>
+                        <label for="skill">Tên kỹ năng</label><br />
+                        <input type="text" name="skill" id="input-skill" />
+                      </div>
+                      <div>
+                        <label for="pic">Hình ảnh</label><br />
+                        <input type="text" name="pic" id="img-skill-add" />
+                      </div>
+                    </div>
+                    <div class="btn-form">
+                      <button class="btn-form-cancel" onclick="cancelForm()">
+                        Huỷ
+                      </button>
+                      <button
+                        class="btn-form-add-skill"
+                        onclick="addNewSkill()"
+                      >
+                        Thêm
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- ===================== -->
+              <div class="bottom">
+                <table>
+                  <thead>
+                    <th>STT</th>
+                    <th>Tên kỹ năng</th>
+                    <th>Hình ảnh</th>
+                    <th>Ngày thêm</th>
+                    <th>Chức năng</th>
+                  </thead>
+                  <tbody id="skill-line">
+                    <tr>
+                      <td>1</td>
+                      <td>ReactJS</td>
+                      <td class="img">
+                        <img src="" alt="" />
+                      </td>
+                      <td>20/05/2024</td>
+                      <td class="btn">
+                        <button onclick="deleteSkillLine()">Xoá</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./skill.js"></script>
+  </body>
+</html>
